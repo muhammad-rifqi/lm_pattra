@@ -1,0 +1,77 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="26.2.14">
+  <diagram name="Page-1" id="m9COXaiZceuPEQRzJH46">
+    <mxGraphModel dx="946" dy="563" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="La4OISsV9GWiQgrAZ2WT-21" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="170" y="90" width="500" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="La4OISsV9GWiQgrAZ2WT-1" value="Berita" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="La4OISsV9GWiQgrAZ2WT-21">
+          <mxGeometry width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="La4OISsV9GWiQgrAZ2WT-8" value="id_berita int (11)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="La4OISsV9GWiQgrAZ2WT-1">
+          <mxGeometry y="20" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="La4OISsV9GWiQgrAZ2WT-9" value="judul varchar(100)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="La4OISsV9GWiQgrAZ2WT-1">
+          <mxGeometry y="40" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="La4OISsV9GWiQgrAZ2WT-10" value="foto varchar(100)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="La4OISsV9GWiQgrAZ2WT-1">
+          <mxGeometry y="60" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="La4OISsV9GWiQgrAZ2WT-11" value="keterangan text" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="La4OISsV9GWiQgrAZ2WT-1">
+          <mxGeometry y="80" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="La4OISsV9GWiQgrAZ2WT-12" value="tanggal_publish date" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="La4OISsV9GWiQgrAZ2WT-1">
+          <mxGeometry y="100" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="La4OISsV9GWiQgrAZ2WT-13" value="id_user int (11)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="La4OISsV9GWiQgrAZ2WT-1">
+          <mxGeometry y="120" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="La4OISsV9GWiQgrAZ2WT-16" value="id_kat int (11)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="La4OISsV9GWiQgrAZ2WT-1">
+          <mxGeometry y="140" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="La4OISsV9GWiQgrAZ2WT-2" value="Pengguna" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="La4OISsV9GWiQgrAZ2WT-21">
+          <mxGeometry x="300" y="140" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="La4OISsV9GWiQgrAZ2WT-4" value="id_user int (11)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="La4OISsV9GWiQgrAZ2WT-2">
+          <mxGeometry y="20" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="La4OISsV9GWiQgrAZ2WT-5" value="username varchar(100)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="La4OISsV9GWiQgrAZ2WT-2">
+          <mxGeometry y="40" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="La4OISsV9GWiQgrAZ2WT-6" value="password varchar (100)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="La4OISsV9GWiQgrAZ2WT-2">
+          <mxGeometry y="60" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="La4OISsV9GWiQgrAZ2WT-7" value="status int (11)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="La4OISsV9GWiQgrAZ2WT-2">
+          <mxGeometry y="80" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="La4OISsV9GWiQgrAZ2WT-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="La4OISsV9GWiQgrAZ2WT-21" source="La4OISsV9GWiQgrAZ2WT-3" target="La4OISsV9GWiQgrAZ2WT-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="La4OISsV9GWiQgrAZ2WT-19" value="one to may" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="La4OISsV9GWiQgrAZ2WT-18">
+          <mxGeometry x="-0.0222" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="La4OISsV9GWiQgrAZ2WT-3" value="Kategori_Berita" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="La4OISsV9GWiQgrAZ2WT-21">
+          <mxGeometry y="260" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="La4OISsV9GWiQgrAZ2WT-14" value="id_kat int (11)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="La4OISsV9GWiQgrAZ2WT-3">
+          <mxGeometry y="20" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="La4OISsV9GWiQgrAZ2WT-15" value="nama_kat varchar (100)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="La4OISsV9GWiQgrAZ2WT-3">
+          <mxGeometry y="40" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="La4OISsV9GWiQgrAZ2WT-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="La4OISsV9GWiQgrAZ2WT-21" source="La4OISsV9GWiQgrAZ2WT-6" target="La4OISsV9GWiQgrAZ2WT-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="La4OISsV9GWiQgrAZ2WT-20" value="one to many" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="La4OISsV9GWiQgrAZ2WT-17">
+          <mxGeometry x="-0.0111" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
