@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.gambar {
+    position: relative;
+    background-image: url(background.png);
+    height: 100vh;
+    background-repeat: repeat-x;
+    background-size: cover;
+    animation: jalan 10s linear infinite;
+}
+
+.motor {
+    width: 210px;
+    height: 210px;
+    top: 410px;
+    left: 200px;
+    cursor: pointer;
+    transition: 1s;
+    position: absolute;
+}
+
+.motor:hover {
+    transform: rotate(-30deg);
+}
+
+@keyframes jalan {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
