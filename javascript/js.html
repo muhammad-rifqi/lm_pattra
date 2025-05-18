@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <h1>Buku Tamu</h1>
+    <hr>
+    <p>
+        <label>Nama</label>
+        <input type="text" id="nama" value="">
+    </p>
+    <p>
+        <label>Email</label>
+        <input type="email" id="email" value="">
+    </p>
+    <p>
+        <label>Pesan</label>
+        <textarea id="pesan"></textarea>
+    </p>
+    <p>
+        <label>Foto</label>
+        <input type="file" id="foto">
+    </p>
+    <p>
+        <button onclick="simpan()">Simpan</button>
+    </p>
+
+    <hr>
+    <div id="hasil">
+
+    </div>
+
+    <script>
+        function simpan() {
+            var nm = document.getElementById("nama").value;
+            var em = document.getElementById("email").value;
+            var ps = document.getElementById("pesan").value;
+            var ft = document.getElementById("foto").files[0];
+            console.log(ft.name+" | "+ft.size+" | "+ft.type)
+            var preview = URL.createObjectURL(ft);
+            document.getElementById("hasil").innerHTML = `Terima Kasih Telah Mengisi Data <br> Dengan Nama <font color= red> ${nm} </font>  , <br> Email ${em} , <br> pesan ${ps} <br> <img src="${preview}" width="200">`;
+        }
+    </script>
+</body>
+
+</html>
