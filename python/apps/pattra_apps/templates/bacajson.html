@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baca JSON Data</title>
+</head>
+
+<body>
+    <h1>Baca Dari Api !</h1>
+    {% for value in rows %}
+    <p>{{ loop.index }} dengan Nama {{value.title | capitalize }} </p>
+    {% endfor %}
+</body>
+
+</html>
